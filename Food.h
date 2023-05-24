@@ -16,7 +16,7 @@ public:
     Food(string name, string category, double price, int quantity, int id, string expiryDate);
     string getExpiryDate() const;
     void setExpiryDate(string expiryDate);
-    virtual void display();
+    void display();
 };
 
 
