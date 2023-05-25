@@ -31,6 +31,10 @@ public:
     void setQuantity(int quantity);
     void setId(int id);
     virtual void display() ;
+    
+    // Function to compare products based on price:
+    bool operator<(const Product &a);
+    
     ~Product();
 };
 
