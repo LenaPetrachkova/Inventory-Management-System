@@ -37,8 +37,10 @@ void Product::setId(int id) {
     Product::id = id;
 }
 
-// Function to compare products based on price:
-bool operator<(const Product &a);
+// Function to compare products based on price
+bool Product::operator<(const Product &a) {
+    return this->getPrice() < a.getPrice();
+}
 
 void Product::display() {
     cout << "Name: " << name << endl;
