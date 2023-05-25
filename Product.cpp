@@ -36,6 +36,10 @@ void Product::setQuantity(int quantity) {
 void Product::setId(int id) {
     Product::id = id;
 }
+
+// Function to compare products based on price:
+bool operator<(const Product &a);
+
 void Product::display() {
     cout << "Name: " << name << endl;
     cout << "Category: " << category << endl;
