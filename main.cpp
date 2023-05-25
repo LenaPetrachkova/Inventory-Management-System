@@ -9,11 +9,6 @@
 #include "Inventory.h"
 using namespace std;
 
-// Function to compare products based on price
-bool operator<(const Product &a, const Product &b) {
-    return a.getPrice() < b.getPrice();
-}
-
 // Function to display the menu
 void displayMenu() {
     cout << endl;
